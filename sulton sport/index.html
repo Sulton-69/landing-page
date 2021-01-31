@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-13/css/all.min.css">
+    <title>Sulton Sport</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="imgl/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Product</li>
+                 <li><a href="#"></a>What's New</li>
+                 <li><a href="#"></a>Contact</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not casual<br>I'ts <span>Sport</span></h2>
+                <p>
+                    sport shoes that are comfortable to use for running and the material is strong and durable
+
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="imgl/img 1 (2).jfif" class="sport">
+
+            </div>
+        </div>
+        <div>
+            <ul class="thumb">
+                <li><img src="imgl/images.jfif" onclick="imgSlider('imgl/img 1 (2).jfif');changeCircleCol"></li>
+                <li><img src="imgl/thu.jfif" onclick="imgSlider('imgl/img 1 (2).jfif');changeCircleColor"></li>
+                <li><img src="imgl/thumb 1.jfif" onclick="imgSlider('imgl/img 1 (2).jfif');changeCircleColor"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+   <script type="text/javascript">function imgSlider(anything){
+       document.querySelector('.sport')
+   }
+   
+   function changeCircleColor(color){
+       const circle = document.querySelector('.circle');
+       circle.style.background = color;
+   }
+   </script>
+</body>
+</html>
